@@ -1,0 +1,135 @@
+
+.h1-title{
+    
+    text-align: center;
+}
+   /*CArd*/
+   .card {
+    width: 15rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #362c29;
+    transition: all ease-in-out 0.5s;
+   }
+  
+
+
+.card img {
+     height: 16rem;
+     width: 15rem;
+     transition: all ease-in-out 0.5s;
+} 
+.card img:hover {
+    height: 20rem;
+    
+} 
+.card .footer-card {
+    padding: 0.8rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card .footer-card p {
+    margin: 0.5rem;
+}
+.card .footer-card p:first-child {
+    font-weight: bold;
+}
+.card .footer-card button {
+    background-color: #a97c50;
+    color: rgb(43, 41, 41);
+    font-size: 0.8rem;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    align-self: center;
+    transition: all ease-in-out 400ms;
+    width: 100%;
+}
+.card .footer-card button:hover {
+    background-color: #613306;
+}
+     /* Grid*/
+     .fila.grid {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 15rem);
+        grid-gap: 1.5rem;
+        justify-content: center;
+        margin-left: 2rem;
+     }
+             
+                       /*Carrusel*/
+
+                   .overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    z-index: 99;
+                    display: none;
+                   }    
+                   .carrousel {
+                    top: 5vh;
+                    left: 5%;
+                    width: 90%;
+                    position: fixed;
+                    z-index: 100;
+                    background-color: white;
+                    overflow: hidden;
+                    display: none;
+                   }
+                   .carrousel .x-modal {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    cursor: pointer;
+                   }
+                    .carrousel .slide {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        transition: 900ms all ease-in-out;
+                    }
+                    .carrousel .slide img {
+                        width: 100%;
+                    }
+                   .r-arrow{
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                
+                   }
+                   .l-arrow {
+                    position: absolute;
+                    top: 50%;
+                    left:  15px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                   
+                   }
